@@ -9,13 +9,17 @@ import { UsersListComponent } from './pages/users/users-list/users-list.componen
 import { UserFormComponent } from './pages/users/user-form/user-form.component';
 import { UserService } from './services/user.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
+import { ButtonComponent } from './components/button/button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     UsersListComponent,
-    UserFormComponent
+    UserFormComponent,
+    DataBindingComponent,
+    ButtonComponent
   ],
   imports: [
     BrowserModule,

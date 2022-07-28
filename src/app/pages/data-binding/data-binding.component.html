@@ -1,0 +1,19 @@
+<div class="container d-flex flex-column align-items-center my-3">
+    <h1>O criador deste CRUD é o {{text}}</h1>
+    <div class="my-3">
+        <img [src]="imageUrl" alt="Imagem aleatória gerada pelo lorem picsum">
+    </div>
+    <div>
+        <button class="btn my-3 mx-2" [style.backgroundColor]="bgColor" (click)="clicou()">Mudar estilo</button>
+        <button [class]="'btn my-3 mx-2 ' + btnClass" (click)="clicou2()">Mudar classe</button>
+    </div>
+
+    <div>
+        <input type="text" class="form-control " [(ngModel)]="txtinput">
+    </div>
+    <p class="text-default">{{txtinput}}</p>
+
+    <app-button [btnText]="'Enviar'" (clickFilho)="clicouNoFilho($event)"></app-button>
+</div>
+
+
